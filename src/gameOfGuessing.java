@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class second {
+public class gameOfGuessing {
     public static void main(String[] args) {
         double number = Math.random();
         double xNumber = number * 100 + 1;
