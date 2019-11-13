@@ -10,7 +10,7 @@ public class gameOfGuessing {
         System.out.println("Try to guess it");
 
 
-        for (int i = numberOfGuesses; i > 0; i--) {
+        for (int i = numberOfGuesses; i > 0; i--) { //pentla pozwalajaca na okreslona ilosc prób
             System.out.println("You have " + i + " guess(es) left");
             System.out.println("Choose number:");
             Scanner scanner = new Scanner(System.in);
@@ -18,15 +18,15 @@ public class gameOfGuessing {
             if (userNumber == numberToGuess) {
                 win = true;
                 break;
-            } else if (userNumber > numberToGuess) {
+            } else if (userNumber > numberToGuess) { //wyswietla komnikat jesli szukana liczba jest mniejsza
                 System.out.println("Number is smaller"); }
-            else if (userNumber < numberToGuess) {
+            else if (userNumber < numberToGuess) { // wyswietla komunikat jesli szukana liczba jest wieksza
                 System.out.println("Number is bigger");}
         }
             if(win) {
-                System.out.println("Correct! You win, the number was " + numberToGuess); }
+                System.out.println("Correct! You win, the number was " + numberToGuess); }//komunikat wygranej
         else  {
-            System.out.println("You lost");
+            System.out.println("You lost"); // komunikat wygranej
                 System.out.println("The number was " + numberToGuess);}
 
 
